@@ -48,7 +48,7 @@ body {
 .card{
   /*box-model*/
   height: 200px;
-  width:200px;
+  width: 400px;
 }
 
 .flip-card-container {
