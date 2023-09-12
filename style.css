@@ -94,9 +94,9 @@ body {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-/*.card:hover .flip-card-container{
+.card:hover .flip-card-container{
   transform: rotateY(180deg);
-}*/
+}
 .front{
   /*Position*/
   position: absolute;
