@@ -47,8 +47,8 @@ body {
 
 .card{
   /*box-model*/
-  height: 200px;
-  width: 400px;
+  height: 400px;
+  width: 200px;
 }
 
 .flip-card-container {
@@ -94,9 +94,9 @@ body {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-/*.card:hover .flip-card-container{
+.card:hover .flip-card-container{
   transform: rotateY(180deg);
-}*/
+}
 .front{
   /*Position*/
   position: absolute;
@@ -112,9 +112,9 @@ body {
   backface-visibility: hidden;
 }
 
-.flip-card{
+/*.flip-card{
   transform: rotateY(180deg);
-}
+}*/
 
 
 
