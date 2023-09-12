@@ -24,7 +24,12 @@
 			<div class="item card">
 				<div class="flip-card-container">
 					<div class="front">
-						<img src="колесница.jpeg" alt="" class="img">
+						<img src="колесница.jpeg" alt="" class="img" onClick="rotateImg()">
+						        <script>
+							      function rotateImg() {
+							        document.querySelector("#img").style.transform = "rotate(90deg)";
+							      }
+						        </script>
 					</div>
 					<div class="back">
 						<h1>text</h1>
