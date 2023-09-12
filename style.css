@@ -57,7 +57,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   /*style*/
-  border: black solid 2px;
+  border: green solid 2px;
 }
 
 .front, .back{
