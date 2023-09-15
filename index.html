@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
- <div class="event">События недели</div>
+ <div id="header" class="event">События недели</div>
  <a href="#popup">POPUP</a>
  <div class="container">
 
@@ -17,22 +17,22 @@
     <div class="flip-card-container">
      <div id="card_" class="front">
       <img src="image_card/Рубашка.jpg" alt="card_1" class="img">
-        <div href="popup" class="card_1">1</div>
+        <div href="#popup" class="card_1">1</div>
      </div>
      <div id="card_1_back" class="back">
       <img src="image_card/Шут.jpg" alt="card_1_back" class="img">
-      <div class="card_1_back">1</div>
+      <div class="card_1_back"></div>
      </div>
     </div>
    </div>
 
    <div class="item card">
-    <div class="flip-card-container">
+    <div class="flip-card-containe">
      <div class="front">
-      <img src="image_card/Рубашка.jpg" alt="" class="img">
+      <img src="image_card/Рубашка.jpg" alt="" class="img"">
      </div>
      <div class="back">
-      <img src="image_card/Маг.jpg" alt="" class="img">
+      <img id="rotated" src="image_card/Маг.jpg" alt="" class="img">
      </div>
     </div>
    </div>
@@ -87,9 +87,10 @@
 
 
  <div id="popup" class="popup">
+     <a href="#header" class="popup__area"></a>
      <div class="popup__body">
          <div class="popup__content">
-             <a href="" class="popup__close">X</a>
+             <a href="#" class="popup__close">X</a>
              <div class="popup__title">TITLE</div>
              <div class="popup__text">
                  Описание карты здесь пару слов о том что она означает!
@@ -99,5 +100,6 @@
  </div>
  <script src="https://telegram.org/js/telegram-web-app.js"></script>
  <script src="app.js"></script>
+<script src="rotate.js"></script>
 </body>
 </html>
