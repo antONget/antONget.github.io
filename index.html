@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+ <div id="header" class="event">События недели</div>
+ <div class="container">
+
+  <div class="inner">
+
+   <div class="item card">
+    <div class="flip-card-container1">
+     <div class="front">
+      <img src="image_card/Рубашка.jpg" alt="1" class="img" onClick="rotateImg1(this.alt)"/>
+        <div class="card_1">1</div>
+     </div>
+     <div id="card_1_back" class="back">
+      <img src="image_card/Шут.jpg" alt="card_1_back" class="img" onClick="rotateImg1()"/>
+      <div class="card_1_back"></div>
+     </div>
+    </div>
+   </div>
+
+   <div class="item card">
+    <div class="flip-card-container">
+     <div class="front">
+      <img src="image_card/Рубашка.jpg" alt="" class="img" onClick="rotateImg2()"/>
+      <div class="card_1">2</div>
+     </div>
+     <div class="back">
+      <img  src="image_card/Маг.jpg" alt="" class="img"/>
+     </div>
+    </div>
+   </div>
+
+   <div class="item card">
+    <div class="flip-card-container">
+     <div class="front">
+      <img src="image_card/Рубашка.jpg" alt="" class="img"/>
+      <div class="card_1">3</div>
+     </div>
+     <div class="back">
+      <img src="image_card/Императрица.jpg" alt="" class="img"/>
+     </div>
+    </div>
+   </div>
+
+   <div class="item card">
+    <div class="flip-card-container">
+     <div class="front">
+      <img src="image_card/Рубашка.jpg" alt="" class="img">
+      <div class="card_1">4</div>
+     </div>
+     <div class="back">
+      <img src="image_card/Император.jpg" alt="" class="img">
+     </div>
+    </div>
+   </div>
+
+   <div class="item card">
+    <div class="flip-card-container">
+     <div class="front">
+      <img src="image_card/Рубашка.jpg" alt="" class="img"/>
+      <div class="card_1">5</div>
+     </div>
+     <div class="back">
+      <img src="image_card/Жрец.jpg" alt="" class="img"/>
+     </div>
+    </div>
+   </div>
+
+   <div class="item card">
+    <div class="flip-card-container">
+     <div class="front">
+      <img src="image_card/Рубашка.jpg" alt="" class="img"/>
+      <div class="card_1">6</div>
+     </div>
+     <div class="back">
+      <img src="image_card/Жрица.jpg" alt="" class="img"/>
+     </div>
+    </div>
+   </div>
+
+  </div>
+ </div>
+ <div class="usercard" id="usercard"> </div>
+
+
+ <div id="popup" class="popup">
+     <a href="#header" class="popup__area"></a>
+     <div class="popup__body">
+         <div class="popup__content">
+             <a href="#" class="popup__close" onClick="closePopup()">X</a>
+             <div id="name_card" class="popup__title"></div>
+             <div class="popup__text">
+                 Вас ожидает дорога, известия полученные по телефону или письмом.
+             </div>
+         </div>
+     </div>
+ </div>
+
+<script src="rotated.js"></script>
+</body>
+</html>
