@@ -6,20 +6,65 @@ function rotateImg1(alt) {
   document.querySelector(".popup__content").style.opacity = 1;
   document.querySelector(".popup__content").style.transform = 'perspective(600px) translate(0px,0%) rotateX(0deg)';
 
-  var theDiv = document.getElementById("name_card");
-  const dictionary = {
+  var div_name_card = document.getElementById("name_card");
+  var description_card = document.getElementById("description_card");
+  const dict_card = {
     "1": "Шут", "2": "Маг", "3": "Императрица", "4": "Император", "5": "Жрица", "6": "Жрец"
   }
-  var content = document.createTextNode(dictionary[alt]);
-  theDiv.appendChild(content);
+  const dict_description = {
+    "1": "Вас ожидает дорога, известия полученные по телефону или письмом!",
+    "2": "Вас ожидает напряженная ситуация в которой придется проявить силу противодействия.",
+    "3": "Вас ожидает подведение итогов, принятие важного решения, серьезный разговор.",
+    "4": "Вас ожидает задержка в реализации проектов,необходимость ждать плодов через длительный срок.",
+    "5": "Вас ожидает ясность относительно чего - либо, новое действие или волевой , решительный шаг.",
+    "6": "Вас ожидает праздник, расширение круга общения , веселая компания , хорошее развитие дел."
+  }
+  localStorage.setItem('num', "1");
+  var content1 = document.createTextNode(dict_card[alt]);
+  div_name_card.innerHTML = dict_card[alt];
+  var content2 = document.createTextNode(dict_description[alt]);
+  description_card.innerHTML = dict_description[alt];
 }
+
+function rotateImg2(alt) {
+  rotation = 180;
+  const flip_card_container = '.flip-card-container'+alt;
+  document.querySelector(flip_card_container).style.transform = `rotateY(${rotation}deg)`;
+  document.querySelector(".popup").style.opacity = 1;
+  document.querySelector(".popup").style.visibility = 'visible';
+  document.querySelector(".popup__content").style.opacity = 1;
+  document.querySelector(".popup__content").style.transform = 'perspective(600px) translate(0px,0%) rotateX(0deg)';
+
+  var div_name_card = document.getElementById("name_card");
+  var description_card = document.getElementById("description_card");
+  const dict_card = {
+    "1": "Шут", "2": "Маг", "3": "Императрица", "4": "Император", "5": "Жрица", "6": "Жрец"
+  }
+  const dict_description = {
+    "1": "Вас ожидает дорога, известия полученные по телефону или письмом!",
+    "2": "Вас ожидает напряженная ситуация в которой придется проявить силу противодействия.",
+    "3": "Вас ожидает подведение итогов, принятие важного решения, серьезный разговор.",
+    "4": "Вас ожидает задержка в реализации проектов,необходимость ждать плодов через длительный срок.",
+    "5": "Вас ожидает ясность относительно чего - либо, новое действие или волевой , решительный шаг.",
+    "6": "Вас ожидает праздник, расширение круга общения , веселая компания , хорошее развитие дел."
+  }
+  localStorage.setItem('num', alt);
+  var content1 = document.createTextNode(dict_card[alt]);
+  div_name_card.innerHTML = dict_card[alt];
+  var content2 = document.createTextNode(dict_description[alt]);
+  description_card.innerHTML = dict_description[alt];
+}
+
 
 function closePopup() {
   document.querySelector(".popup").style.opacity = 0;
   document.querySelector(".popup").style.visibility = 'hidden';
   document.querySelector(".popup__content").style.opacity = 0;
   document.querySelector(".popup__content").style.transform = 'perspective(600px) translate(0px,-100%) rotateX(45deg)';
-  document.querySelector(".flip-card-container1").style.transform = 'rotateY(0deg)';
+  const num = localStorage.num;
+
+  var flip = '.flip-card-container'+num;
+  document.querySelector(flip).style.transform = 'rotateY(0deg)';
 }
 
 let rotation = 0;
