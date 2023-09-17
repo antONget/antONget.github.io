@@ -39,7 +39,7 @@ body {
   width: 200px;
 }
 
-.flip-card-container, .flip-card-container1, .flip-card-container2 {
+.flip-card-container, .flip-card-container1, .flip-card-container2, .flip-card-container3, .flip-card-container4, .flip-card-container5, .flip-card-container6{
   /*box-model*/
   height:100%;
   width: 100%;
@@ -76,7 +76,7 @@ body {
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-.flip-card-container, .flip-card-container1, .flip-card-container2{
+.flip-card-container, .flip-card-container1, .flip-card-container2, .flip-card-container3, .flip-card-container4, .flip-card-container5, .flip-card-container6{
   /*position*/
   position: relative;
   /*flip card*/
@@ -85,10 +85,6 @@ body {
 }
 
 .card:hover .flip-card-container{
-  transform: rotateY(180deg);
-}
-
-.card:hover .flip-card-container2{
   transform: rotateY(180deg);
 }
 
@@ -188,8 +184,8 @@ left: 0;
 
 .popup__content{
   background-color: #fff;
-  color: #000
-  max-width: 200px;
+  color: #000;
+  max-width: 300px;
   padding: 30px;
   position: relative;
   transition: all 1.3s ease 0s;
@@ -211,3 +207,4 @@ left: 0;
   font-size: 40px;
   margin: 0px 0px 1em 0px;
 }
+
