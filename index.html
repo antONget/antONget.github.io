@@ -21,16 +21,16 @@
         <div class="card_1">1</div>
      </div>
      <div id="card_1_back" class="back">
-      <img src="image_card/Шут.jpg" alt="card_1_back" class="img" onClick="rotateImg1()"/>
+      <img src="image_card/Шут.jpg" alt="card_1_back" class="img"/>
       <div class="card_1_back"></div>
      </div>
     </div>
    </div>
 
    <div class="item card">
-    <div class="flip-card-container">
+    <div class="flip-card-container2">
      <div class="front">
-      <img src="image_card/Рубашка.jpg" alt="" class="img" onClick="rotateImg2()"/>
+      <img src="image_card/Рубашка.jpg" alt="2" class="img" onClick="rotateImg2(this.alt)"/>
       <div class="card_1">2</div>
      </div>
      <div class="back">
@@ -40,9 +40,9 @@
    </div>
 
    <div class="item card">
-    <div class="flip-card-container">
+    <div class="flip-card-container3">
      <div class="front">
-      <img src="image_card/Рубашка.jpg" alt="" class="img"/>
+      <img src="image_card/Рубашка.jpg" alt="3" class="img" onClick="rotateImg2(this.alt)"/>
       <div class="card_1">3</div>
      </div>
      <div class="back">
@@ -52,21 +52,21 @@
    </div>
 
    <div class="item card">
-    <div class="flip-card-container">
+    <div class="flip-card-container4">
      <div class="front">
-      <img src="image_card/Рубашка.jpg" alt="" class="img">
+      <img src="image_card/Рубашка.jpg" alt="4" class="img" onClick="rotateImg2(this.alt)"/>
       <div class="card_1">4</div>
      </div>
      <div class="back">
-      <img src="image_card/Император.jpg" alt="" class="img">
+      <img src="image_card/Император.jpg" alt="" class="img"/>
      </div>
     </div>
    </div>
 
    <div class="item card">
-    <div class="flip-card-container">
+    <div class="flip-card-container5">
      <div class="front">
-      <img src="image_card/Рубашка.jpg" alt="" class="img"/>
+      <img src="image_card/Рубашка.jpg" alt="5" class="img" onClick="rotateImg2(this.alt)"/>
       <div class="card_1">5</div>
      </div>
      <div class="back">
@@ -76,9 +76,9 @@
    </div>
 
    <div class="item card">
-    <div class="flip-card-container">
+    <div class="flip-card-container6">
      <div class="front">
-      <img src="image_card/Рубашка.jpg" alt="" class="img"/>
+      <img src="image_card/Рубашка.jpg" alt="6" class="img" onClick="rotateImg2(this.alt)"/>
       <div class="card_1">6</div>
      </div>
      <div class="back">
@@ -93,13 +93,12 @@
 
 
  <div id="popup" class="popup">
-     <a href="#header" class="popup__area"></a>
+     <a href="#header" class="popup__area" onClick="closePopup()"></a>
      <div class="popup__body">
          <div class="popup__content">
              <a href="#" class="popup__close" onClick="closePopup()">X</a>
              <div id="name_card" class="popup__title"></div>
-             <div class="popup__text">
-                 Вас ожидает дорога, известия полученные по телефону или письмом.
+             <div id="description_card" class="popup__text">
              </div>
          </div>
      </div>
